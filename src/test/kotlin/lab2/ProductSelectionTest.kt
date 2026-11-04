@@ -113,8 +113,8 @@ class ProductSelectionTest {
     // ---------- Сохранность входов и независимость вызовов ----------
     @Test
     fun doesNotModifyInputs() {
-        val products = mutableListOf(webcam, mouse, keyboard, monitor)
-        val recommended = mutableListOf(3L, 2L, 3L, 99L, 1L, 4L)
+        val products = mutableListOf(webcam, mouse, monitor, keyboard)
+        val recommended = mutableListOf(3L, 2L, 3L, 99L, 1L, 4)
         val excluded = mutableListOf(1L, 1L)
 
         val productsBefore = products.toList()
